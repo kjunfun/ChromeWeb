@@ -1,0 +1,36 @@
+:root{
+    /*Color*/
+    --white-color: #fff;
+    --black-color: #140a00;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --gray-dark-color: #909090; 
+    --gray-light-color: #e0e0e0;
+    /*Size*/
+    --padding: 12px;
+    --avatar-size: 36px;
+    /*Font Size*/
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+/*CSS 초기 설정*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+button, button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color:transparent;
+}
+a{
+    text-decoration: none;
+}
