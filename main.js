@@ -1,19 +1,8 @@
-const testVar = document.querySelector(".hello h1:nth-child(2)");
+const testVar = document.querySelector("div.hello h1:nth-child(1)");
 
 function handleTitleClick(){
-    console.log("testVar was clicked");
-}
-function handleMousEnter(){
-    testVar.innerText = "Mouse is here!";
-}
-function handleMouseLeave(){
-    testVar.innerText = "Mouse is gone!";
-}
-function handleWindowResize(){
-    document.body.style.backgroundColor = "tomato";
+    testVar.classList.toggle("clicked");
+//toggle은 testVar의 classList에 "clicked"가 있다면, toggle은 "clicked"를 제거해주고, 없다면 "clicked"를 추가해준다.
 }
 
 testVar.addEventListener("click", handleTitleClick); 
-testVar.onmouseenter = handleMousEnter; 
-testVar.addEventListener("mouseleave", handleMouseLeave); 
-window.addEventListener("resize", handleWindowResize);

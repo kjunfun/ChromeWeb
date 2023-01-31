@@ -2,8 +2,10 @@
     /*Color*/
     --white-color: #fff;
     --black-color: #140a00;
-    --blue-color: #045fd4;
+    --blue-color: cornflowerblue;
+    --beige-color: beige;
     --red-color: #ff0000;
+    --tomato-color: tomato;
     --gray-dark-color: #909090; 
     --gray-light-color: #e0e0e0;
     /*Size*/
@@ -33,4 +35,21 @@ button, button:focus{
 }
 a{
     text-decoration: none;
+}
+
+/*여기서부터 시작*/
+body{
+    background-color: var(--beige-color);
+}
+
+h1{
+    color: var(--blue-color);
+}
+
+.clicked{
+    color: var(--tomato-color);
+    transition: 1s;
+}
+.sexy-font{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
