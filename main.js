@@ -1,8 +1,15 @@
-const testVar = document.querySelector("div.hello h1:nth-child(1)");
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const link = document.querySelector("a");
 
-function handleTitleClick(){
-    testVar.classList.toggle("clicked");
-//toggle은 testVar의 classList에 "clicked"가 있다면, toggle은 "clicked"를 제거해주고, 없다면 "clicked"를 추가해준다.
+function onLoginSubmit(event){
+    event.preventDefault();
+    console.log(loginInput.value);
+}
+function handleLinkClick(event){
+    event.preventDefault();
+    console.dir(event);
 }
 
-testVar.addEventListener("click", handleTitleClick); 
+loginForm.addEventListener("submit", onLoginSubmit);
+link.addEventListener("click", handleLinkClick);

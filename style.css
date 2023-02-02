@@ -38,18 +38,3 @@ a{
 }
 
 /*여기서부터 시작*/
-body{
-    background-color: var(--beige-color);
-}
-
-h1{
-    color: var(--blue-color);
-}
-
-.clicked{
-    color: var(--tomato-color);
-    transition: 1s;
-}
-.sexy-font{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
