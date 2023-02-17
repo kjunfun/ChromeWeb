@@ -27,14 +27,18 @@
 ul, ol{
     list-style: none;
 }
-button, button:focus{
+button, button:focus{ /*button: focus -> 키보드나 마우스로 대상이 선택되었을 경우*/
     border: none;
     cursor: pointer;
     outline: none;
     background-color:transparent;
+    padding: var(--padding);
 }
 a{
     text-decoration: none;
 }
 
 /*여기서부터 시작*/
+.hidden{
+    display: none;
+}

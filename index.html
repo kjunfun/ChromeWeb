@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momentum Chrome Web</title>
+    <title>Momentum Chrome Web</title> <!--title 밑에 일괄적으로 연결-->
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="main.js" defer></script> <!--header 가장 마지막 줄에 defer 속성 적용한 script 연결-->
 </head>
 
 <body>
-    <form id="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your name?">
-        <input type="submit" value="Log In">
+    <form class="hidden" id="login-form">
+        <input type="text" maxlength="15" placeholder="What is your name?" required>
+        <input type="submit" value="Log In ">
     </form>
-    <a href="https://nomadcoders.co/javascript-for-beginners/lectures/2902">Go to courses</a>
+    <h1 class="hidden" id="greeting"></h1>
 </body>
 
 </html>
