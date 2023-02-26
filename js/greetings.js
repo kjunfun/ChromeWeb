@@ -11,7 +11,7 @@ function onLoginSubmit(event){
     loginForm.classList.add(HIDDEN_CLASSNAME); //login form 숨기기
     const username = loginInput.value; //loginInput 값(문자열)을 username변수에 담아주기
     //localStorage는 데이터 CRUD가능한 브라우저가 지원하는 작은 DB API
-    localStorage.setItem(USERNAME_KEY, username); //localStorage에 "username" 문자열 데이터를 username라는 키 변수를 생성하여 저장.
+    localStorage.setItem(USERNAME_KEY, username); //localStorage에 "username"라는 문자열 키 변수에 사용자 입력 문자열 데이터를 저장.
     //db에 데이터가 계속 쌓이지는 않는 상황인데, 계속 데이터를 입력받고 데이터가 쌓이게 구현하려면?
     paintGreetings(username); //h1 태그를 보여주는 paintGreetings함수를 호출. 매개변수는 form안에 있는 input에 입력한 유저데이터.
 }
